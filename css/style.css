@@ -8,7 +8,7 @@
 :root
 {
     --primaryColor:#ff274b;
-    --secondaryColor:#f7bcf7;
+    --secondaryColor:white;
     --lightColor:#FFFFFF;
     --bgColor-1:#171a1c;
     --bgColor-2:#22282a;
@@ -19,6 +19,7 @@ h1
 {
     font-size: 4.65rem;
     margin: 1.7rem 0;
+    
 }
 h3{
     font-size: 1.5rem;
@@ -49,6 +50,10 @@ html{
     font-size: 16px;
     color: var(--lightColor);
     scroll-behavior: smooth;
+}
+body
+{
+    background-color: var(--bgColor-2);
 }
 
 
@@ -171,7 +176,7 @@ nav ul li a:hover
   
 }
 
-       /* فوق الشكل */
+       
 .Header .container-img {
     position: relative;
     width: 50%;
@@ -180,9 +185,9 @@ nav ul li a:hover
 
 .Header .container-img img:first-child {
     position: absolute;
-    bottom: -40px;       /* ارفع الشكل الأحمر */
+    bottom: -40px;       
     right: 0;
-    width: 550px;        /* قلل حجم الشكل */
+    width: 550px;        
     z-index: 1;
    
 }
@@ -191,9 +196,9 @@ nav ul li a:hover
 .Header .container-img img:last-child {
     position: absolute;
     bottom: 0;
-    right: 60px;         /* حرك الصورة شوي لليسار */
-    width: 350px;        /* حجم الصورة */
-    z-index: 10;         /* فوق الشكل */
+    right: 60px;         
+    width: 350px;       
+    z-index: 10;         
 }
 .about
 {
@@ -262,6 +267,8 @@ nav ul li a:hover
 
 .skills .container-img{
     width: 35%;
+    display: flex;
+    justify-content: right;
 }
 .skills .container-img img{
     width: 90%;
@@ -347,6 +354,8 @@ footer
 {
     padding: 2rem var(--padding);
     background-color: var(--bgColor-2);
+    transform: translateY(10px);
+
    
     
 }
@@ -356,6 +365,7 @@ footer .container-footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 footer .container-footer p{
@@ -455,9 +465,7 @@ footer .container-footer .end
     }
 }
 
-/* ===========================
-   📱 576px - للجوال الصغير
-   =========================== */
+
 @media (max-width: 576px) {
 
     nav h2 {
